@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SportMeet | Plataforma de Eventos Deportivos</title>
+    <meta
+      name="description"
+      content="Boceto de plataforma para registro de eventos deportivos con enfoque en comunidad, acción y reservas seguras."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Teko:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="index.html" aria-label="SportMeet inicio">
+          <span class="logo-mark">SM</span>
+          <span>SportMeet</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#confianza">Confianza</a></li>
+          <li><a href="pages/crud-eventos.html">Panel CRUD</a></li>
+          <li><a href="index-v2.html">Version V2</a></li>
+        </ul>
+        <a class="btn btn-primary" href="pages/crud-eventos.html">Ir al panel</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy fade-up">
+          <p class="eyebrow">Deporte + comunidad + gestión clara</p>
+          <h1>Apúntate a eventos en segundos, sin fricción.</h1>
+          <p>
+            Diseñado para transmitir energía y confianza: encuentra torneos, reserva tu plaza y
+            confirma tu inscripción con una interfaz limpia y moderna.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-accent" href="#eventos">Apuntarse ahora</a>
+            <a class="btn btn-ghost" href="pages/crud-eventos.html">Ver CRUD estilo Nest</a>
+          </div>
+          <div class="kpis">
+            <article>
+              <strong>+140</strong>
+              <span>Eventos activos</span>
+            </article>
+            <article>
+              <strong>98%</strong>
+              <span>Reservas confirmadas</span>
+            </article>
+            <article>
+              <strong>24h</strong>
+              <span>Soporte organizadores</span>
+            </article>
+          </div>
+        </div>
+
+        <aside class="hero-card fade-up delay-1">
+          <h2>Próximo destacado</h2>
+          <p class="event-title">Urban Sprint League 5K</p>
+          <ul>
+            <li><span>Fecha</span><strong>19 Abr 2026</strong></li>
+            <li><span>Ciudad</span><strong>Madrid</strong></li>
+            <li><span>Plazas</span><strong class="success">32 disponibles</strong></li>
+            <li><span>Precio</span><strong>18 EUR</strong></li>
+          </ul>
+          <button class="btn btn-accent" type="button">Reservar plaza</button>
+        </aside>
+      </section>
+
+      <section id="eventos" class="events container">
+        <div class="section-head fade-up">
+          <p class="eyebrow">Catálogo</p>
+          <h2>Eventos con una estética startup, pero listos para producción.</h2>
+        </div>
+
+        <div class="cards-grid stagger-list">
+          <article class="event-card">
+            <p class="tag">Fútbol 7</p>
+            <h3>Copa Barrio Norte</h3>
+            <p>Torneo amateur con grupos y eliminatorias. Gestión de equipos y pagos.</p>
+            <footer>
+              <span class="status open">Inscripciones abiertas</span>
+              <a href="#">Ver detalle</a>
+            </footer>
+          </article>
+
+          <article class="event-card">
+            <p class="tag">Trail</p>
+            <h3>Mountain Night Run</h3>
+            <p>Carrera nocturna de 12 km con control de cupos y check-in digital.</p>
+            <footer>
+              <span class="status few">Quedan pocas plazas</span>
+              <a href="#">Ver detalle</a>
+            </footer>
+          </article>
+
+          <article class="event-card">
+            <p class="tag">Crossfit</p>
+            <h3>Throwdown Valencia</h3>
+            <p>Competición por categorías con registro de atletas y ranking en vivo.</p>
+            <footer>
+              <span class="status open">Inscripciones abiertas</span>
+              <a href="#">Ver detalle</a>
+            </footer>
+          </article>
+        </div>
+      </section>
+
+      <section id="confianza" class="trust container fade-up">
+        <article>
+          <h3>Pagos y reservas fiables</h3>
+          <p>Mensajería clara de estados para evitar dudas durante el proceso de inscripción.</p>
+        </article>
+        <article>
+          <h3>Flujo simple de alta</h3>
+          <p>Una ruta visual orientada a acción: explorar, reservar, confirmar.</p>
+        </article>
+        <article>
+          <h3>Arquitectura preparada para CRUD</h3>
+          <p>Conecta con un backend tipo Nest para entidades de eventos, usuarios y reservas.</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

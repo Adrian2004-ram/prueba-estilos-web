@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SportMeet V2 | Modo Competicion</title>
+    <meta
+      name="description"
+      content="Version agresiva del boceto SportMeet, con estetica deportiva de alto impacto para eventos y reservas."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles-v2.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <p>ULTIMA HORA: +38 eventos publicados esta semana</p>
+        <a href="index.html">Ver version equilibrada</a>
+      </div>
+    </header>
+
+    <nav class="main-nav container">
+      <a class="brand" href="index-v2.html">
+        <span class="brand-box">SM</span>
+        <span>SPORTMEET // MODO COMPETICION</span>
+      </a>
+      <div class="main-links">
+        <a href="#eventos">Eventos</a>
+        <a href="#panel">CRUD</a>
+        <a href="pages/crud-eventos.html">Admin</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero container">
+        <article class="hero-copy">
+          <p class="kicker">RESERVA. COMPITE. GANA.</p>
+          <h1>TU PLAZA NO SE PIDE, SE ASEGURA.</h1>
+          <p>
+            Plataforma de eventos deportivos con energia de cancha: busqueda rapida,
+            reserva inmediata y gestion de cupos en tiempo real.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-fire" href="#eventos">APUNTARSE YA</a>
+            <a class="btn btn-dark" href="#panel">VER CRUD VISUAL</a>
+          </div>
+        </article>
+
+        <aside class="hero-side">
+          <p class="label">EVENTO EN TENDENCIA</p>
+          <h2>DERBY URBANO 10K</h2>
+          <ul>
+            <li><span>FECHA</span><strong>26 ABR 2026</strong></li>
+            <li><span>UBICACION</span><strong>SEVILLA</strong></li>
+            <li><span>INSCRITOS</span><strong>184 / 220</strong></li>
+            <li><span>ESTADO</span><strong class="ok">PLAZAS ABIERTAS</strong></li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="ticker-wrap">
+        <div class="ticker-track">
+          <span>FUTBOL 7 // INSCRIPCIONES ABIERTAS</span>
+          <span>CROSSFIT THROWDOWN // ULTIMOS CUPOS</span>
+          <span>TRAIL NOCTURNO // CHECK-IN DIGITAL</span>
+          <span>PADEL MASTER MIXTO // NUEVA FECHA</span>
+        </div>
+      </section>
+
+      <section id="eventos" class="events container">
+        <header class="section-head">
+          <p class="kicker">CARTELERA</p>
+          <h2>EVENTOS CON MODO ALTA INTENSIDAD</h2>
+        </header>
+
+        <div class="event-grid">
+          <article class="event-card red">
+            <p class="sport">RUNNING</p>
+            <h3>SPRINT CITY BATTLE</h3>
+            <p>Serie de carreras por heats con clasificacion y ranking por tiempos.</p>
+            <a href="#">VER DETALLE</a>
+          </article>
+
+          <article class="event-card dark">
+            <p class="sport">FUTBOL 7</p>
+            <h3>LIGA BARRIOS PRO</h3>
+            <p>Torneo de grupos con pagos por equipo y gestion de calendario.</p>
+            <a href="#">VER DETALLE</a>
+          </article>
+
+          <article class="event-card red">
+            <p class="sport">CROSSFIT</p>
+            <h3>IRON THROWDOWN</h3>
+            <p>Categorias RX/Scaled con validacion de inscripcion y resultados.</p>
+            <a href="#">VER DETALLE</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="panel" class="crud-preview container">
+        <header class="section-head">
+          <p class="kicker">BACKOFFICE</p>
+          <h2>PREVIEW CRUD TIPO NEST</h2>
+        </header>
+
+        <div class="crud-block">
+          <div class="crud-line">
+            <span>GET /eventos</span>
+            <strong>LISTA + FILTROS + ESTADOS</strong>
+          </div>
+          <div class="crud-line">
+            <span>POST /eventos</span>
+            <strong>ALTA RAPIDA CON VALIDACIONES</strong>
+          </div>
+          <div class="crud-line">
+            <span>PATCH /eventos/:id</span>
+            <strong>EDICION DE CUPOS Y FECHA</strong>
+          </div>
+          <div class="crud-line">
+            <span>DELETE /eventos/:id</span>
+            <strong>BAJA CON CONFIRMACION</strong>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
